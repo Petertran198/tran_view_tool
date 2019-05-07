@@ -20,7 +20,11 @@ Or install it yourself as:
 
 ## Usage
 ```ruby
-*  @copyright = TranViewTool::Renderer.copyright('name','msg') 
+* 1. Add to helper   
+def copyright_generator
+    TranViewTool::Renderer.copyright('Peter Tran','All Rights Reserved')
+end
+* 2. paste <%= copyright_generator %> into view page 
 ```
 ## Development
 
